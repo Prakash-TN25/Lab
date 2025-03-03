@@ -1,0 +1,95 @@
+
+<html>
+<head>
+
+
+<title>Table Example</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+     
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            
+           
+        }
+        h1{
+            color: white;
+            background-color: darkgreen;
+            padding: 10px;
+            border-radius: 20px;
+            width: 220px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+        th, td {
+            border: 1px solid #f7f3f3;
+            padding: 10px;
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: bold;
+            border-radius:3px;
+        }
+        th {
+            background-color:rgb(3, 48, 80);
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        tr:nth-child(even) {
+            background-color: #c5c8c9;
+        }
+</style>
+</head>
+<body>
+<h1 onclick="demo()">Table Example</h1>
+	<center>
+<button ><h2 style="color: red;font-size: 25px;font-family: cursive;" >Student Marks Table</h2></button>
+	</center>
+    <table>
+<thead>
+<tr>
+<th>Roll Number</th>
+<th>Name</th>
+<th>Subject</th>
+<th>Marks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>101</td>
+<td>Ram</td>
+<td>Python</td>
+<td>85</td>
+</tr>
+<tr>
+<td>102</td>
+<td>Moorthi</td>
+<td>Java </td>
+<td>92</td>
+</tr>
+<tr>
+<td>103</td>
+<td>Kumar</td>
+<td>Data Structure</td>
+<td>78</td>
+</tr>
+<tr>
+<td>104</td>
+<td>Suresh</td>
+<td>RDBMS</td>
+<td>88</td>
+</tr>
+</tbody>
+</table>
+
+<script>
+    function demo(){
+        document.getElementsByTagName("button").style.backgroundColor='black';
+    }
+</script>
+</body>
+
+</html>
