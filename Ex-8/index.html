@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prime Numbers Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            margin: 50px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            display: inline-block;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Prime Numbers Finder (Between Two Numbers)</h2>
+
+<form action="process.php" method="POST">
+    <label for="n1">Enter Number 1 (Start):</label><br>
+    <input type="number" id="n1" name="n1" required><br>
+
+    <label for="n2">Enter Number 2 (End):</label><br>
+    <input type="number" id="n2" name="n2" required><br>
+
+    <button type="submit">Find Prime Numbers</button>
+</form>
+
+</body>
+</html>
